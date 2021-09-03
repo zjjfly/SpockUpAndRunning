@@ -14,4 +14,8 @@ class User {
     def follow(User user) {
         following.add(user)
     }
+
+    def follows(User user) {
+        following.contains(user)
+    }
 }
