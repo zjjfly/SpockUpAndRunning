@@ -1,4 +1,5 @@
-package com.github.zjjfly.sur
+package com.github.zjjfly.sur.ch2
+
 
 import spock.lang.Specification
 
@@ -27,6 +28,8 @@ class UserSpec extends Specification {
         //then对测试结果进行验证
         then:
         user.following.size() == 1
+        //and可以跟在then，given，expect之后，一般用于分割不相关的断言，使得代码可读性更好
+        and:
         user.following.contains(other)
 
         //cleanup清理测试环境，无论前面的断言结果如何，都会执行里面的代码，类似finally

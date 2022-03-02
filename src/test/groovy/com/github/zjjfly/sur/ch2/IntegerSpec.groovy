@@ -1,4 +1,4 @@
-package com.github.zjjfly.sur
+package com.github.zjjfly.sur.ch2
 
 
 import spock.lang.Specification

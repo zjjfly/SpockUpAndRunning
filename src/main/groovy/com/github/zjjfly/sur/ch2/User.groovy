@@ -1,9 +1,9 @@
-package com.github.zjjfly.sur
+package com.github.zjjfly.sur.ch2
 
 import groovy.transform.Canonical
 
 /**
- * ${description}* @author Zi JunJie(junjie.zi@siemens.com)
+ * @author zijunjie[https://github.com/zjjfly]
  */
 @Canonical
 class User {
