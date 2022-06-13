@@ -1,6 +1,6 @@
 package com.github.zjjfly.sur.ch3
 
-import com.github.zjjfly.sur.ch3.User
+import spock.lang.Ignore
 import spock.lang.Specification
 
 /**
@@ -11,6 +11,7 @@ class AssertionErrorSpec extends Specification {
 
     def user = new User("kirk")
 
+    @Ignore
     def "assertion failure raised with useful info"() {
 
         given:
@@ -35,6 +36,7 @@ class AssertionErrorSpec extends Specification {
         other.following = []
     }
 
+    @Ignore
     def "type mismatch can be detected by spock"() {
         given:
         def other = new User("spock")
